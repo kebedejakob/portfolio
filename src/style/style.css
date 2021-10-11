@@ -204,25 +204,16 @@ font-size: 20px;
   justify-content: space-between;
   font-weight: 1000;
   font-size: 20px;
-  padding-left: 40px;
-  color: black;
-  
-  
-  
+  padding-left: 500px;
+  color: black;  
 }
 .navbar-container{
   width: 100vw;
   background-color: beige;
   border-bottom: solid black 3px;
+  position: fixed;
 }
-section{
-  display: block;
-  line-height: 18pt;
-  padding: 100px 0 130px 0;
-  background-color:beige;
-  color: black;
-  position: relative;
-}
+
 
 
 .progressbar{
@@ -233,6 +224,7 @@ section{
   border-radius: 20px;
   margin-top: 7px;
   display: flex;
+  padding-left: 30px;
 
 
 }
@@ -250,7 +242,7 @@ section{
   display: flex;
   flex-direction: column;
   font-size: 14px;
-
+  margin: 30px;
 }
 
 .skills-info{
@@ -274,4 +266,19 @@ section{
 width: 600px;
 
   
+}
+
+#target {
+  font-size: 30px;
+  color: #000;
+  
+}
+
+.about,
+.home,
+.portfolio,
+.contact {
+cursor: pointer;
+
+
 }

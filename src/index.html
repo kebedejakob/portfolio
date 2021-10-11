@@ -28,21 +28,22 @@
     <script src="scripts/pt.min.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/modal.js"></script>
-    <script src='https://unpkg.com/@camwiegert/typical@0.1.1/typical.js'></script>
+    <script src='scripts/typical.js'></script>
   </head>
 
   <body>
 
     <!-- Start writing your HTML code here -->
-     <script>
-       const target = document.querySelector("#target");
+     <script type="module" >
+        import { type } from './scripts/typical.js';
+        const target = document.querySelector("#target");
 
-        console.log(target);
-        type(target, 'And Im a Fullstack Developer!', 1000, 'solid stuff', 1000, );
+        type(target, 'And Im a Fullstack Developer!', 1000,'Living my life one undefined error at the time', 1000, 'If your code works on the first try.....you´ve done something wrong.', 1000);
      </script>
-    <div class="intro-container">
+
+    <div class="intro-container" id="intro-container1">
        <img class="intro-picture" src="img/jakob1.JPG" alt="">
-      
+              
       <div class="introText">
         <h1>  
           <span class="introGreet">Hello I'm</span> 
@@ -55,10 +56,10 @@
     
     <div class="navbar-container" >
       <div class="navbar">
-        <div class="Home">Home</div>
-        <div class="About">About</div>
-        <div class="portfolio">Portfolio</div>
-        <div class="Contact">Contact</div>
+        <div a href ="#intro-container1" class="home">Home</div>
+        <div a href ="#about-container" class="about">About</div>
+        <div a href ="#portfolio-container" class="portfolio">Portfolio</div>
+        <div a href ="#contact-container" class="contact">Contact</div>
       </div>
     </div>
 
@@ -67,7 +68,7 @@
 
 
 
-        <div class="container skill" id="skills">
+        <div class="container-skills" id="skills">
           <h1>Skillset</h1>
           <div class="skills-info"><div>I Attended Techover Academy, a Programming bootcamp that provided me with all the tools necassery to become a Fullstack Developer! Iv'e also Taken multiple Udemy Courses to further inhance my abilities within this line of work! </div>
         </div> 
